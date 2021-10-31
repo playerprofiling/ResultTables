@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height:50px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+#eventTraitTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+ /* //width: 70vw;
+  //vertical-align:top;*/
+  /*display: inline-block;*/
+  /* flex: 2;*/
+  height: fit-content;
+  margin-right: 50px;
+}
+
+#eventTraitTable td, #eventTraitTable th {
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#eventTraitTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#eventTraitTable tr:hover {background-color: #ddd;}
+
+.tableTitle {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04666D;
+  color: white;
+}
+
+.notes{
+ /*width: 25vw;
+ display: inline-block;*/
+     flex: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .notes{
+    margin: 20px;
+    margin-right: 50px;
+  }
+}
+</style>
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="https://playerprofiling.github.io/WoWEvents/">Events Table</a></li>
+      <li><a href="https://playerprofiling.github.io/EventTrait/">Event-Trait Table</a></li>
+      <li><a href="https://playerprofiling.github.io/WoWTraits/">Trait Explainations</a></li>
+      <li><a class="active" href="#about">Result Tables</a></li>
+    </ul>
+  </nav>
+
+<div style="margin-top:50px">
+  <div class="container">
+    <table id="eventTraitTable">
+      <tr>
+      <th class = "tableTitle" colspan="6">Grinder Trait (roll, acquired items)</th>
+      </tr>
+      <tr>
+      <th rowspan="2">UserId</th>
+      <th colspan="2">ET-FW</th>
+      <th colspan="2">ET-PCA</th>
+      <th>AE</th>
+      </tr>
+      <tr>
+      <th>Cluster ID</th>
+      <th>Grinder Rank</th>	
+      <th>Cluster ID</th>
+      <th>Grinder Rank</th>
+      <th>Cluster ID</th>
+      </tr>
+      <tr>
+      <td>9132</td>
+      <td>2</td>
+      <td>1</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+    </table>
+    <div class = "notes">
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, mauris eu pellentesque tristique, mi magna consectetur leo, non tincidunt dui odio sed nisl. Morbi quis libero nec dolor dignissim finibus. Duis volutpat libero et diam gravida rutrum. Phasellus vitae felis quis augue dictum tincidunt lacinia vitae massa. In hac habitasse platea dictumst. Duis congue congue lorem, non fringilla quam laoreet ut. Curabitur sed lacinia massa.
+
+  Cras commodo turpis id metus sodales, eu volutpat nisi sollicitudin. Pellentesque vel tortor aliquet, molestie dolor auctor, consequat ex. Pellentesque nec tortor non est lacinia sagittis. Ut mattis viverra enim eget dapibus. Aliquam erat volutpat. Maecenas accumsan libero a suscipit feugiat. Cras a hendrerit elit. Curabitur molestie quam metus, nec feugiat tellus tincidunt a. Morbi in nisl ut mi cursus consectetur eu eu diam. Aliquam urna tellus, lacinia a sem in, volutpat consequat erat. Quisque elementum erat eu eros accumsan rhoncus.
+
+  Mauris id augue gravida, iaculis odio nec, tristique dui. Praesent vitae lacus sapien. Nam in nunc tortor. Curabitur bibendum velit in libero tempor vestibulum. Donec faucibus eros est, consectetur sagittis velit ullamcorper ac. Suspendisse vitae porta leo. Donec libero odio, mattis ac libero ac, efficitur sodales purus. Cras ut aliquet felis. Mauris eleifend eros eget venenatis pulvinar. Ut lacinia eu tortor eget placerat. Praesent ac egestas enim. Donec et nibh vel ex accumsan dignissim.
+
+  Cras suscipit, urna eu mollis auctor, velit ipsum tempor sem, nec rhoncus arcu mi vel lectus. Praesent aliquam turpis quis eros semper feugiat. Sed mauris odio, placerat at posuere cursus, efficitur ut sem. Duis commodo vehicula massa, non mollis quam luctus eu. Nunc eu ipsum ex. Phasellus a dui neque. Aliquam congue diam ligula.
+
+  Nullam ut nunc in diam pretium ornare a a quam. Curabitur eu quam orci. Aenean vitae libero eu tortor dapibus cursus ut a enim. Duis vitae urna vitae nunc rhoncus porttitor consequat vitae lectus. Pellentesque vel ante felis. Etiam tristique tincidunt lectus nec sollicitudin. Cras varius sem ultrices semper efficitur. Ut at porta nibh, non hendrerit tortor. Mauris sem lectus, blandit et lorem vel, scelerisque
+    </div>
+  </div>
+</div>
+</body>
+</html>
