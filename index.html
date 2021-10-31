@@ -38,7 +38,7 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-#eventTraitTable {
+#resultTable {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
  /* //width: 70vw;
@@ -47,18 +47,19 @@ li a:hover:not(.active) {
   /* flex: 2;*/
   height: fit-content;
   margin-right: 50px;
+  flex:1
 }
 
-#eventTraitTable td, #eventTraitTable th {
+#resultTable td, #resultTable th {
   font-size: 12px;
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
 
-#eventTraitTable tr:nth-child(even){background-color: #f2f2f2;}
+#resultTable tr:nth-child(even){background-color: #f2f2f2;}
 
-#eventTraitTable tr:hover {background-color: #ddd;}
+#resultTable tr:hover {background-color: #ddd;}
 
 .tableTitle {
   padding-top: 12px;
@@ -72,12 +73,32 @@ li a:hover:not(.active) {
  /*width: 25vw;
  display: inline-block;*/
      flex: 1;
+     margin: 5px;
 }
 
 .container{
     display: flex;
     flex-direction: row;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+}
+
+.code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    /*white-space: nowrap;*/
 }
 
 @media (max-width: 800px) {
@@ -99,49 +120,498 @@ li a:hover:not(.active) {
       <li><a href="https://playerprofiling.github.io/WoWEvents/">Events Table</a></li>
       <li><a href="https://playerprofiling.github.io/EventTrait/">Event-Trait Table</a></li>
       <li><a href="https://playerprofiling.github.io/WoWTraits/">Trait Explainations</a></li>
-      <li><a class="active" href="#about">Result Tables</a></li>
+      <li><a class="active" href="https://playerprofiling.github.io/ResultTables/">Result Tables</a></li>
     </ul>
   </nav>
 
-<div style="margin-top:50px">
+<div style="margin-top:60px">
   <div class="container">
-    <table id="eventTraitTable">
+    <table id="resultTable">
       <tr>
-      <th class = "tableTitle" colspan="6">Grinder Trait (roll, acquired items)</th>
+      <th class = "tableTitle" colspan="6">
+        Competitor Trait</th>
       </tr>
       <tr>
-      <th rowspan="2">UserId</th>
-      <th colspan="2">ET-FW</th>
-      <th colspan="2">ET-PCA</th>
-      <th>AE</th>
+        <th rowspan="2">UserId</th>
+        <th colspan="2">ET-FW</th>
+        <th colspan="2">ET-PCA</th>
+        <th>AE</th>
       </tr>
       <tr>
-      <th>Cluster ID</th>
-      <th>Grinder Rank</th>	
-      <th>Cluster ID</th>
-      <th>Grinder Rank</th>
-      <th>Cluster ID</th>
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>	
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>
+        <th>Cluster ID</th>
       </tr>
-      <tr>
-      <td>9132</td>
-      <td>2</td>
-      <td>1</td>
-      <td>5</td>
-      <td>1</td>
-      <td>2</td>
-      </tr>
+      <tr> 
+        <td>778 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>1448</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>888 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>4786</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>473 </td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>3873</td> 
+        <td>1</td> 
+        <td>3</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>4</td>
+       </tr>
+       <tr> 
+        <td>5433</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>1</td>
+       </tr>
+       <tr> 
+        <td>6273</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</td>
+       </tr>
+       <tr> 
+        <td>2008</td> 
+        <td>1</td> 
+        <td>3</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>4</td>
+       </tr>
+       <tr> 
+        <td>5240</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>5</td>
+       </tr>
+     
     </table>
     <div class = "notes">
+      <p>Top 10 competitor players and their assigned clusters for 
+      each method. Theorder of displaying the character trait
+      relative to other clusters shown as rank. We can’t report 
+      the rank for AE method since it reconstructs the input
+      nodes in its output. So it is not possible to have a proper
+      relationship between original and encoded nodes. </p>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, mauris eu pellentesque tristique, mi magna consectetur leo, non tincidunt dui odio sed nisl. Morbi quis libero nec dolor dignissim finibus. Duis volutpat libero et diam gravida rutrum. Phasellus vitae felis quis augue dictum tincidunt lacinia vitae massa. In hac habitasse platea dictumst. Duis congue congue lorem, non fringilla quam laoreet ut. Curabitur sed lacinia massa.
+      <p><li> <u> Used Query:</u></p>
+      <p class="code">SELECT * FROM wowapi.playerdetails where level = 100 and ArenasPlayed > 1200 and DuelsWon > 550 and WorldHonorableKills > 700 group by name order by ArenasPlayed desc;</p>
 
-  Cras commodo turpis id metus sodales, eu volutpat nisi sollicitudin. Pellentesque vel tortor aliquet, molestie dolor auctor, consequat ex. Pellentesque nec tortor non est lacinia sagittis. Ut mattis viverra enim eget dapibus. Aliquam erat volutpat. Maecenas accumsan libero a suscipit feugiat. Cras a hendrerit elit. Curabitur molestie quam metus, nec feugiat tellus tincidunt a. Morbi in nisl ut mi cursus consectetur eu eu diam. Aliquam urna tellus, lacinia a sem in, volutpat consequat erat. Quisque elementum erat eu eros accumsan rhoncus.
+    </div>
+  </div>
 
-  Mauris id augue gravida, iaculis odio nec, tristique dui. Praesent vitae lacus sapien. Nam in nunc tortor. Curabitur bibendum velit in libero tempor vestibulum. Donec faucibus eros est, consectetur sagittis velit ullamcorper ac. Suspendisse vitae porta leo. Donec libero odio, mattis ac libero ac, efficitur sodales purus. Cras ut aliquet felis. Mauris eleifend eros eget venenatis pulvinar. Ut lacinia eu tortor eget placerat. Praesent ac egestas enim. Donec et nibh vel ex accumsan dignissim.
+  <div class="container">
+    <table id="resultTable">
+      <tr>
+      <th class = "tableTitle" colspan="6">
+        Non-Competitor Trait</th>
+      </tr>
+      <tr>
+        <th rowspan="2">UserId</th>
+        <th colspan="2">ET-FW</th>
+        <th colspan="2">ET-PCA</th>
+        <th>AE</th>
+      </tr>
+      <tr>
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>	
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>
+        <th>Cluster ID</th>
+      </tr>
+      <tr> 
+        <td>78155 </td> 
+        <td>0</td> 
+        <td>6</td> 
+        <td>6</td> 
+        <td>7</td> 
+        <td>3</td> 
+        </tr>
+       <tr> 
+        <td>60206 </td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>9617  </td> 
+        <td>0</td> 
+        <td>6</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>3</td> 
+        </tr>
+       <tr> 
+        <td>25042 </td> 
+        <td>0</td> 
+        <td>6</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+       <tr> 
+        <td>3854  </td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>7082  </td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+       <tr> 
+        <td>2142  </td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+       <tr> 
+        <td>15353 </td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+       <tr> 
+        <td>2881  </td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+       <tr> 
+        <td>55341 </td> 
+        <td>3</td> 
+        <td>8</td> 
+        <td>6</td> 
+        <td>8</td> 
+        <td>7</td> 
+        </tr>
+    </table>
+    <div class = "notes">
+      <p>Non-competitor 10 selected players and their assigned clusters for each method. The order of displaying the character trait relative to other clusters shown as rank.</p>
 
-  Cras suscipit, urna eu mollis auctor, velit ipsum tempor sem, nec rhoncus arcu mi vel lectus. Praesent aliquam turpis quis eros semper feugiat. Sed mauris odio, placerat at posuere cursus, efficitur ut sem. Duis commodo vehicula massa, non mollis quam luctus eu. Nunc eu ipsum ex. Phasellus a dui neque. Aliquam congue diam ligula.
+      <p><li> <u> Used Query:</u></p>
+      <p class="code">SELECT * FROM wowapi.playerdetails where level = 100 and ArenasPlayed &lt; 1 and DuelsWon &lt; 1 and WorldHonorableKills &lt; 1 and totalHonorableKills &lt; 5 group by name order by DuelsWon asc ;</p>
 
-  Nullam ut nunc in diam pretium ornare a a quam. Curabitur eu quam orci. Aenean vitae libero eu tortor dapibus cursus ut a enim. Duis vitae urna vitae nunc rhoncus porttitor consequat vitae lectus. Pellentesque vel ante felis. Etiam tristique tincidunt lectus nec sollicitudin. Cras varius sem ultrices semper efficitur. Ut at porta nibh, non hendrerit tortor. Mauris sem lectus, blandit et lorem vel, scelerisque
+    </div>
+  </div>
+
+  <div class="container">
+    <table id="resultTable">
+      <tr>
+      <th class = "tableTitle" colspan="6">
+        Grinder Trait (roll, acquired items)</th>
+      </tr>
+      <tr>
+        <th rowspan="2">UserId</th>
+        <th colspan="2">ET-FW</th>
+        <th colspan="2">ET-PCA</th>
+        <th>AE</th>
+      </tr>
+      <tr>
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>	
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>
+        <th>Cluster ID</th>
+      </tr>
+      <tr> 
+        <td>9132</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>425 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>0</tr> 
+        </td>
+       <tr> 
+        <td>7069</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>0</tr> 
+        </td>
+       <tr> 
+        <td>3764</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>5423</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>0</tr> 
+        </td>
+       <tr> 
+        <td>6850</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>225 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>1448</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>2</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>480 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>3886</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+       <tr> 
+        <td>901 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>6</tr> 
+        </td>
+       <tr> 
+        <td>425 </td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>0</tr> 
+        </td>
+       <tr> 
+        <td>5423</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>0</tr> 
+        </td>
+       <tr> 
+        <td>7909</td> 
+        <td>6</td> 
+        <td>2</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>5</tr> 
+        </td>
+       <tr> 
+        <td>7076</td> 
+        <td>2</td> 
+        <td>1</td> 
+        <td>5</td> 
+        <td>1</td> 
+        <td>2</tr> 
+        </td>
+    </table>
+    <div class = "notes">
+      <p>Top 10 grinder players and their assigned clusters for each method. The order of displaying the character trait relative to other clusters shown as rank. We can't report the rank in AE due to its constraints  </p>
+
+      <p><li> <u> Used Query:</u></p>
+      <p class="code">SELECT id,EpicItemsLooted,NeedRollsMadeOnLoot,nFeedLoot FROM wowapi.playerdetails where level = 100 and playerdetails.EpicItemsLooted > 5500 and playerdetails.NeedRollsMadeOnLoot > 300  group by name order by playerdetails.nFeedLoot desc ;</p>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <table id="resultTable">
+      <tr>
+      <th class = "tableTitle" colspan="6">
+        Non-Grinder Trait (roll, acquired items but good achievement)</th>
+      </tr>
+      <tr>
+        <th rowspan="2">UserId</th>
+        <th colspan="2">ET-FW</th>
+        <th colspan="2">ET-PCA</th>
+        <th>AE</th>
+      </tr>
+      <tr>
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>	
+        <th>Cluster ID</th>
+        <th>Grinder Rank</th>
+        <th>Cluster ID</th>
+      </tr>
+      <tr> 
+        <td>77842</td> 
+        <td>4</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>4</td> 
+        <td>5</td> 
+        </tr>
+       <tr> 
+        <td>58102</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>4749 </td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>67808</td> 
+        <td>1</td> 
+        <td>4</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>5</td> 
+        </tr>
+       <tr> 
+        <td>68003</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>57858</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>58091</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>60038</td> 
+        <td>1</td> 
+        <td>4</td> 
+        <td>7</td> 
+        <td>4</td> 
+        <td>5</td> 
+        </tr>
+       <tr> 
+        <td>60203</td> 
+        <td>1</td> 
+        <td>4</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>5</td> 
+        </tr>
+       <tr> 
+        <td>63915</td> 
+        <td>5</td> 
+        <td>7</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+       <tr> 
+        <td>67990</td> 
+        <td>1</td> 
+        <td>4</td> 
+        <td>3</td> 
+        <td>7</td> 
+        <td>6</td> 
+        </tr>
+    </table>
+    <div class = "notes">
+      <p>Non-grinder but achiever 10 players and their assigned clusters for each method. The order of displaying the character trait relative to other clusters shown as rank. </p>
+
+      <p><li> <u> Used Query:</u></p>
+      <p class="code">SELECT id,EpicItemsLooted,NeedRollsMadeOnLoot,nFeedLoot FROM wowapi.playerdetails where level = 100 and playerdetails.EpicItemsLooted &lt; 1 and playerdetails.NeedRollsMadeOnLoot &lt; 1  group by name order by achievementPoints desc;</p>
+
     </div>
   </div>
 </div>
